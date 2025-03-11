@@ -1,4 +1,6 @@
+
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import-normalize;
 
 
@@ -6,4 +8,5 @@ body{
     font-size: 14px;
     max-width: 1920px;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
 }

@@ -7,6 +7,7 @@ import { fetchCategories } from "./store/features/categorySlice";
 import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar";
 import { AppDispatch } from "./store/store";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
+      <Footer />
     </>
   );
 }

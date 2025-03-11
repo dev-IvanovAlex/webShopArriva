@@ -52,7 +52,7 @@ export default () => {
                       New
                     </p>
                     <img
-                      className="  object-cover w-full h-full"
+                      className="object-cover w-full h-[300px]"
                       src={product.images[0]}
                       alt="product"
                     />
