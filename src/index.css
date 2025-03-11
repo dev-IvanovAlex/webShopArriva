@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import-normalize;
+
+
+body{
+    font-size: 14px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
