@@ -5,8 +5,8 @@ import YoutubeIcon from "../../iconsComponents/YoutubeIcon";
 
 const DiscountSection = () => {
   return (
-    <section className="mt-[80px] flex justify-between bg-[#FFC803] px-[76px] py-[66px] items-center  ">
-      <h2 className="text-[40px] font-semibold text-white">
+    <section className="mt-[80px] gap-5 py-[20px] px-[20px] flex flex-col justify-between bg-[#FFC803] xl:px-[76px] xl:py-[66px] items-center xl:flex-row ">
+      <h2 className="text-[40px] font-semibold text-white text-center">
         Скидка 10% на подписку
       </h2>
       <form className="flex grow-1 px-6 max-w-[550px] relative" action="">

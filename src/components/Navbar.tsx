@@ -13,16 +13,17 @@ import sidemenu2 from "../assets/sidemenu-2.png";
 import sidemenu3 from "../assets/sidemenu-3.png";
 import sidemenu4 from "../assets/sidemenu-4.png";
 import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 const Navbar: FC = () => {
-  const { categories } = useSelector((state) => state.categories);
+  const { categories } = useSelector((state: RootState) => state.categories);
 
   const [visible, setVisible] = useState<boolean>(false);
   const burgerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let handleModal = (e: { target: Node | null }) => {
-      if (!burgerRef.current.contains(e.target)) {
+    let handleModal = (e: any) => {
+      if (!burgerRef.current?.contains(e.target)) {
         setVisible(false);
       }
     };
@@ -58,14 +59,14 @@ const Navbar: FC = () => {
           </div>
         </div>
         <nav>
-          <ul className=" gap-2.5 justify-between *:hover:text-amber-700 hidden md:flex">
+          <ul className=" gap-x-1 justify-center *:hover:text-amber-700 hidden md:flex flex-wrap">
             {categories.slice(0, 5).map((category: any) => {
               return (
                 <li key={category.id}>
                   <NavLink
                     className={(navData) =>
                       (navData.isActive ? "text-orange-300 " : "") +
-                      "px-4 lg:px-7 py-3 align-middle"
+                      "px-2 lg:px-4 py-0.5 align-middle"
                     }
                     to={`/${category.slug}`}
                   >
@@ -138,7 +139,7 @@ const Navbar: FC = () => {
             SALE %
           </div>
           <nav>
-            <ul className=" gap-2.5 justify-between *:hover:text-amber-700  text-black">
+            <ul className=" gap-2.5 justify-between *:hover:text-amber-700  text-black ">
               <li>
                 <NavLink
                   onClick={() => setVisible(false)}

@@ -39,6 +39,9 @@ const Footer = () => {
                 <p>ПОПУЛЯРНОЕ</p>
               </Link>
               <Link>
+                <p>CLOTHES</p>
+              </Link>
+              <Link>
                 <p>ELECTRONICS</p>
               </Link>
               <Link>
@@ -49,9 +52,6 @@ const Footer = () => {
               </Link>
               <Link>
                 <p>MISCELLANEOUS</p>
-              </Link>
-              <Link>
-                <p>ПОДОБРАТЬ РАЗМЕР</p>
               </Link>
             </div>
           </div>
