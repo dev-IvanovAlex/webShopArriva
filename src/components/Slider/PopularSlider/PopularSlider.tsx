@@ -23,8 +23,8 @@ export default () => {
       <div className="grid grid-cols-[minmax(160px,auto)] ">
         {products.map((product: Product) => {
           return (
-            <SwiperSlide>
-              <div key={product.id} className="relative">
+            <SwiperSlide key={product.id}>
+              <div className="relative">
                 <svg
                   className="group absolute top-[5%] right-[5%] z-1"
                   width="19.500488"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import VkIcon from "../../iconsComponents/VkIcon";
 import InstagramIcon from "../../iconsComponents/InstagramIcon";
 import YoutubeIcon from "../../iconsComponents/YoutubeIcon";
