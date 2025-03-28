@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router";
 
 import "./style.css";
 import "swiper/swiper-bundle.css";

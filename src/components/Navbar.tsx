@@ -76,7 +76,7 @@ const Navbar: FC = () => {
   }, [searchValue]);
 
   const cartLength = () => {
-    let data = cart.reduce((summ, item, id, arr) => {
+    let data = cart.reduce((summ, item) => {
       summ = summ + item.quantity;
       return summ;
     }, 0);
