@@ -42,7 +42,7 @@ const Cart: FC = () => {
 
   return (
     <>
-      <div className="text-center mt-[30px] ">
+      <div className="text-center mt-[30px] p-4">
         {!cart.length ? (
           <div className="text-2xl">В корзине ничего нет</div>
         ) : (
@@ -51,10 +51,10 @@ const Cart: FC = () => {
             <div className="max-w-[600px] m-auto p-3 border-1 border-zinc-200 rounded-[8px] flex flex-col gap-2 bg-zinc-100">
               {cart.map((item) => {
                 return (
-                  <div className="grid grid-cols-4 gap-3 bg-white rounded-[8px]">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-white rounded-[8px] auto-rows-[1fr] ">
                     <Link to={`/catalog/${item.id}`}>
                       <div
-                        className="h-full w-full rounded-[8px]"
+                        className="h-full w-full rounded-[8px] max-w-[130px] m-auto"
                         style={{
                           backgroundImage: `url(${item.images[0]})`,
                           backgroundRepeat: "no-repeat",
