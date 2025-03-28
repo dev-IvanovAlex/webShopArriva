@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router";
-
 import visaCard from "../../assets/VisaCard.png";
 import masterCard from "../../assets/MasterCard.png";
 import worldCard from "../../assets/WorldCard.png";
@@ -12,22 +10,22 @@ const Footer = () => {
           <div className="text-center ">
             <h6 className="text-[#1A1A1A] font-semibold">ПОМОЩЬ</h6>
             <div className="flex flex-col gap-3 mt-[20px] *:hover:text-amber-700">
-              <Link>
+              <Link to="/profile">
                 <p>МОЙ АККАУНТ</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>ГДЕ МОЙ МАГАЗИН</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>ДОСТАВКА И ОПЛАТА</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>ПРАВИЛА ВОЗВРАТА</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>НАЙТИ МАГАЗИН</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>ПОДОБРАТЬ РАЗМЕР</p>
               </Link>
             </div>
@@ -35,22 +33,22 @@ const Footer = () => {
           <div className="text-center ">
             <h6 className="text-[#1A1A1A] font-semibold">КАТАЛОГ</h6>
             <div className="flex flex-col gap-3 mt-[20px] *:hover:text-amber-700">
-              <Link>
+              <Link to="#">
                 <p>ПОПУЛЯРНОЕ</p>
               </Link>
-              <Link>
+              <Link to="/clothes">
                 <p>CLOTHES</p>
               </Link>
-              <Link>
+              <Link to="/electronics">
                 <p>ELECTRONICS</p>
               </Link>
-              <Link>
+              <Link to="/furniture">
                 <p>FURNITURE</p>
               </Link>
-              <Link>
+              <Link to="/shoes">
                 <p>SHOES</p>
               </Link>
-              <Link>
+              <Link to="/miscellaneous">
                 <p>MISCELLANEOUS</p>
               </Link>
             </div>
@@ -58,19 +56,19 @@ const Footer = () => {
           <div className="text-center">
             <h6 className="text-[#1A1A1A] font-semibold">КОМПАНИЯ</h6>
             <div className="flex flex-col gap-3 mt-[20px] *:hover:text-amber-700">
-              <Link>
+              <Link to="#">
                 <p>О НАС</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>ФИЛОСОФИЯ БРЕНДА</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>БЛОГ</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>КОНТАКТЫ</p>
               </Link>
-              <Link>
+              <Link to="#">
                 <p>FAQ</p>
               </Link>
             </div>

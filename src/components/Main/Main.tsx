@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 import { useSelector } from "react-redux";
 
@@ -57,21 +56,21 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div>
-        <CategoriesListWithImg categories={categories} />
-      </div>
-      <div className="flex gap-7 mt-[80px] ">
-        <div className=" bg-[#13EDED] w-[25%] ">
+
+      <CategoriesListWithImg categories={categories} />
+
+      <div className="flex gap-x-2 mt-[80px] ">
+        <div className="hidden  md:block bg-[#13EDED] w-[25%] ">
           <img
             src={categoriesMain}
-            className="w-full max-h-[548px] h-full object-cover"
+            className="w-full h-full object-cover"
             alt="categoriesMain"
           />
         </div>
-        <div className="w-[75%]">
+        <div className="w-[100%] md:w-[75%]">
           <div>
             <h2 className="text-[30px] font-semibold">Категории товаров</h2>
-            <p className="w-[80%] mt-[20px]">
+            <p className="w-[100%] md:w-[80%] mt-[20px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
               similique vero explicabo debitis dicta, aspernatur nemo quos, ea
               itaque praesentium, quo omnis? Excepturi hic facilis accusamus cum
@@ -89,7 +88,7 @@ const Main = () => {
 
       <div className="mt-[80px]">
         <div className="flex justify-between items-center mb-11">
-          <h2 className="text-3xl font-semibold  ">Популярное</h2>
+          <h2 className="text-3xl font-semibold ">Популярное</h2>
           <Link to={"/catalog"}>
             <p className="flex items-center gap-x-2 uppercase text-[#565656]">
               В каталог

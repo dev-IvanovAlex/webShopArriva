@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-const YoutubeIcon: FC = () => {
+const YoutubeIcon: FC = ({}) => {
   return (
     <svg
       width="38.000000"

@@ -12,7 +12,7 @@ type Props = {
   setVisiblePopUp: (value: boolean) => any;
 };
 
-const BigPopupMenu: FC<Props> = ({ setVisiblePopUp }) => {
+const BigPopupMenu: FC<Props> = () => {
   return (
     <div className=" mt-[20px]  px-[1%] sm:px-[2%] md:px-[3%] lg:px-[4%] xl:px-[5%] transition-all absolute right-0 left-0">
       <div
