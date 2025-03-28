@@ -5,9 +5,7 @@ import { AppDispatch, RootState } from "../../store/store";
 import { toggleForm, toggleFormType } from "../../store/features/userSlice";
 import UserLoginForm from "./UserLoginForm";
 
-type Props = {};
-
-const UserForm: FC = (props: Props) => {
+const UserForm: FC = () => {
   const { showForm, formType } = useSelector((state: RootState) => state.user);
   const dispatch = useDispatch<AppDispatch>();
   const closeForm = () => {
